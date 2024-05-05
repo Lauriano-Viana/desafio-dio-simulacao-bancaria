@@ -62,5 +62,6 @@ public class SimulacaoBancaria {
             }
 
         }
+        scanner.close();
     }
 }
