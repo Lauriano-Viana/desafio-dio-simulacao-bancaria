@@ -4,10 +4,11 @@ import java.util.Scanner;
 
 public class SimulacaoBancaria {
    public static void main(String[] args) {
-
+       Locale.setDefault(Locale.US);
+    //Scanner scanner = new Scanner(System.in);
 
         try {
-            menu();
+           menu();
         } catch (InputMismatchException e) {
             System.out.println("Valor incorreto tente novamente");
             menu();
@@ -16,7 +17,7 @@ public class SimulacaoBancaria {
     }
 
     static void menu(){
-        Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
+        Scanner scanner = new Scanner(System.in);
         double saldo = 0.0;
         int opcao = 3;
         while (opcao !=0) {
